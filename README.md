@@ -16,7 +16,7 @@ link_do_projeto no github
 
 ```
 
-#comandos básicos para enviar/trazer código entre o remoto e o local
+# comandos básicos para enviar/trazer código entre o remoto e o local
 
 ````
 bash
