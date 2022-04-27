@@ -16,20 +16,20 @@ link_do_projeto no github
 
 ```
 
-# comandos básicos para enviar/trazer código entre o remoto e o local
+# Comandos básicos para enviar/trazer código entre o remoto e o local
 
 ````
 bash
 git push origin main # envia do local para o remoto
 git pull origin main # traz do remoto para o local
 ````
-# Site com Sintaxe básica de escrita e formatação no GitHub
+## Site com Sintaxe básica de escrita e formatação no GitHub
 Documentação do [Markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-# Logos
-![Git](IMG/GIT.png)
+## Logos
+![Imagem logo do Git](IMG/GIT.png)
 
-# Páginas
+## Páginas
 [Scrum](scrum.md)
 [Kanban](Kanban.md)
 
