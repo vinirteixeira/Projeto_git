@@ -22,3 +22,6 @@ git pull origin main # traz do remoto para o local
 [Kanban](kanban.md)
 
 [Comandos Básicos](comandos_basicos.md)
+
+# Aulas
+[Banco de dados](banco_de_dados.md)
