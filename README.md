@@ -34,3 +34,5 @@ Documentação do [Markdown](https://docs.github.com/pt/get-started/writing-on-g
 [Kanban](kanban.md)
 
 [Comandos Básicos](comandos_basicos.md)
+
+Texto Legal
