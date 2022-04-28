@@ -16,18 +16,8 @@ bash
 git push origin main # envia do local para o remoto
 git pull origin main # traz do remoto para o local
 ````
-## Site com Sintaxe básica de escrita e formatação no GitHub
-Documentação do [Markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
-## Logos
-![Imagem logo do Git](IMG/GIT.png)
-
 ## Páginas
 [Scrum](scrum.md)
 [Kanban](kanban.md)
 
 [Comandos Básicos](comandos_basicos.md)
-
-Texto Legal
-
-Texto alterado github
