@@ -31,6 +31,6 @@ Documentação do [Markdown](https://docs.github.com/pt/get-started/writing-on-g
 
 ## Páginas
 [Scrum](scrum.md)
-[Kanban](Kanban.md)
+[Kanban](kanban.md)
 
 [Comandos Básicos](comandos_basicos.md)
