@@ -13,6 +13,8 @@ Clear (limpa tela)
 git status (checa arquivos na pasta)
 git log (tudo que foi alterado)
 git branch -M nome (alterar nome do branch (Master/Main...))
+git clone (link no github) - copia do github para o computador de casa
+
 ````
 ## Pastas 
 ````
