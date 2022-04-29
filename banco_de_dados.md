@@ -44,7 +44,8 @@ Linha de campos organizado.
 ## Tabela
 
 ````
-São conjuntos lógicos de registros, chamados também de entidades, cadastro ou arquivos. Cada tabela deve ser nomeada separadamente, evitar acentuação e caracteres especiais.
+São conjuntos lógicos de registros, chamados também de entidades, cadastro ou arquivos. 
+Cada tabela deve ser nomeada separadamente, evitar acentuação e caracteres especiais.
 ````
 Bancos de dados são um conjunto de tabelas relacionadas entre si.
 
