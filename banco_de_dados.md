@@ -1,6 +1,6 @@
-Aula 1
+# Aula 1
 
-Banco de dados:
+## Banco de dados:
 
 -Modelagem de banco de dados para aplicações web
 
@@ -55,4 +55,132 @@ Bancos de dados são um conjunto de tabelas relacionadas entre si.
 Campo data de nascimento, não idade (idade não altera)
 Gerar um campo como ID, Código, Chave (Chave Primária)
 
+````
+
+# Aula 2
+
+## Temas:
+
+    Revisão
+    Pesquisa Rápida
+    Modelo conceitual Vs Modelo lógico Vs Modelo físico
+    Tipos de chaves
+    Tipos de Relacionamentos
+### Pesquisa rápida
+
+Quanto ganha trabalhar com:
+
+    Banco de dados -- 4,600 Junior
+
+    Analista -- 3,600 Junior
+
+    Desenvolvedor WEB -- 4500 Junior
+
+    Desenvolvedor Mobile -- 5,600 Junior
+
+    Qual maior salário na área -- 13,000 +
+
+## Modelo conceitual (modelo abstrato) --> Modelo lógico (camada intermediária) --> Modelo físico (camada de sistema)
+
+Modelo conceitual é uma camada mais filosófica (conversar mais com o cliente), os requisitos direto com cliente (cores, posições de botões)
+
+Modelo Lógico define regras e tecnologia (definições de dados, funções e projeto de regras)
+
+Modelo Físico implementação
+
+## Relacionamentos entre tabelas
+
+Existem quatro tipos de relacionamentos:
+
+    UM para UM (1-1)
+    UM para várias (1-N)
+    Várias para UM (N-1)
+    Várias para Várias(N-N)
+
+
+### Tabelas
+````
+Médico (#CRM,nome,dt_nasc,telefone,email,foto,sexo)
+
+Profissão ((criar chave noma: #idProfissao)nome,descricao,salario,carga_horaria)
+
+Comida ((criar chave: #codComida)nome,preco,dt_validade,peso,caloria,qtd_sodio,qtd_gluten...)
+
+Hobby ((criar chave: #iD)nome,descriçao,finalidade,frequencia,qtd_calorias)
+
+Namorado(a) ((criar chave: #matricula) nome,descricao,nota,sexo,altura,dt_nasc,dt_inicio,dt_fim,investimento,telemovel)
+
+chave primária (algum campo que nunca se repete, Ex: CPF, CRM, etc...)
+
+# ou @ = chave primária
+
+Paciente (#idPaciente,nome,dt_nasc,CPF,RG,alergia?,descricao_alergia,endereco)
+````
+
+### Tipos de relacionamentos:
+
+````
+Médico   	    N - N   Paciente
+
+Empregado   	N - N   Cargo
+
+Animal   	    N - 1   Raça
+
+Aluno    	    N - N   Disciplina
+
+Nota Fiscal  	N - 1  	Cliente
+
+Nota Fiscal 	N - N 	Produto
+
+Filme  		    N - N   Gênero (pode ser 1 - N, mais de um gênero vira nova categoria)
+
+Produto    	    N - 1   Tipo de produto   (tipo é sempre 1)
+
+Médico    	    N - N   Especialidade
+````
+
+# Tipos de chave
+
+## Chave primária (# ou @)
+
+Chave com id ou código para organizar a tabela
+
+    Chave primária do lado 1 deve estar na tabela do lado N
+````    
+Ex: Animal          N  -  1       Raça
+    #CodAnimal                    #iDRaca **
+    Nome                          Nome
+    Peso                          Descricao
+    DtNasc
+    &idRaca **
+````
+## Chave estrangeira (& ou FK) 
+
+Chave serve para interligar tabelas
+
+
+=======================================================================
+
+
+### Exemplos
+
+
+Aplicando a primeira regra de relacionamento
+
+Chave primária do lado 1 deve sempre estar no lado N da tabela.
+
+````
+Nota Fiscal  	N - 1  	Cliente
+
+Cliente (#CPF, nome, endereço, dt_nasc, email, telefone, .......)
+
+Nota Fiscal (#Nr_nota, dt, valor_nt, tributos, &CPF)
+`````
+
+````
+Estado         1 - N    Cidade
+
+Cidade (#iDcity, nome, descrição, &UF)
+
+Estado (#UF, estado)
 ````
