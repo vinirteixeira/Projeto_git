@@ -141,7 +141,7 @@ Médico    	    N - N   Especialidade
 
 # Tipos de chave
 
-## Chave primária (# ou @)
+## Chave primária (# ou @ ou PK)
 
 Chave com id ou código para organizar a tabela
 
@@ -159,7 +159,7 @@ Ex: Animal          N  -  1       Raça
 Chave serve para interligar tabelas
 
 
-=======================================================================
+========================================================================
 
 
 ### Exemplos
@@ -184,3 +184,9 @@ Cidade (#iDcity, nome, descrição, &UF)
 
 Estado (#UF, estado)
 ````
+````
+lucid.app
+
+DrawIO
+````
+
