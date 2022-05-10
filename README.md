@@ -25,3 +25,5 @@ git pull origin main # traz do remoto para o local
 
 # Aulas
 [Banco de dados](banco_de_dados.md)
+
+[HTML e CSS](HTML_CSS.md)
