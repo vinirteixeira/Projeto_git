@@ -145,7 +145,7 @@ Médico    	    N - N   Especialidade
 
 Chave com id ou código para organizar a tabela
 
-    Chave primária do lado 1 deve estar na tabela do lado N
+    **** REGRA 1- Chave primária do lado 1 deve estar na tabela do lado N
 ````    
 Ex: Animal          N  -  1       Raça
     #CodAnimal                    #iDRaca **
@@ -157,6 +157,7 @@ Ex: Animal          N  -  1       Raça
 ## Chave estrangeira (& ou FK) 
 
 Chave serve para interligar tabelas
+
 
 
 ========================================================================
@@ -189,4 +190,11 @@ lucid.app
 
 DrawIO
 ````
+
+# Aula 3
+
+    **** REGRA 2 para relacionamento N PARA N devemos:
+    1º "Quebrar" o relacionamento
+    2º Criar uma nova tabela (Associativa)
+    3º Aplicar a 1º Regra
 
