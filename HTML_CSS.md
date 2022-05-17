@@ -190,3 +190,202 @@ Lista ordenada
 Site com ajuda e dicas:
 
 Aulas online de [HTML e CSS](https://www.w3schools.com/)
+
+# Aula 2
+
+## Tabelas
+
+````
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Tabelas</title>
+            <link rel="stylesheet" href="estilo.css">
+        </head>
+
+        <body>
+            <h1>Tabelas</h1>
+            <table border="1">
+                
+                <tr>
+                    <th>Linha 1 Coluna 1</th>
+                    <th>Linha 1 Coluna 2</th>
+                    <th>Linha 1 Coluna 3</th>
+                </tr>
+                <tr>
+                    <td>Linha 2 Coluna 1</td>
+                    <td>Linha 2 Coluna 2</td>
+                    <TD>Linha 2 Coluna 3</TD>
+                </tr>
+                <tr>
+                    <td>Linha 3 Coluna 1</td>
+                    <td>Linha 3 Coluna 2</td>
+                    <TD>Linha 3 Coluna 3</TD>
+                </tr>
+            </table>
+        </body>
+
+    </html>
+````
+
+## Configurações no arquivo .css para editar a tabela
+````
+html {
+    background-color: black;
+}
+
+table, th, td {
+    border: 2px groove rgb(0, 0, 255);
+    border-radius: 10px;
+    text-align: center;
+    background-color: blue;
+    }
+
+h1 {    
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    }
+
+th {
+    background-color: black;
+    color: gold;
+    }
+
+td {
+    background-color: gray;
+    color: aliceblue;
+}
+````
+
+## Mesclar cédulas
+
+### Colunas
+````
+            <table border="1">
+                
+                <tr>
+                    <th colspan="2">Linha 1 Coluna 1/2</th>
+                    
+                    <th>Linha 1 Coluna 3</th>
+                </tr>
+                <tr>
+                    <td>Linha 2 Coluna 1</td>
+                    <td>Linha 2 Coluna 2</td>
+                    <TD>Linha 2 Coluna 3</TD>
+                </tr>
+                <tr>
+                    <td>Linha 3 Coluna 1</td>
+                    <td>Linha 3 Coluna 2</td>
+                    <TD>Linha 3 Coluna 3</TD>
+                </tr>
+            </table>
+````
+### Linhas
+````
+<table border="1">
+                
+                <tr>
+                    <th>Linha 1 Coluna 1</th>
+                    <th>Linha 1 Coluna 2</th>
+                    <th>Linha 1 Coluna 3</th>
+                </tr>
+                <tr >
+                    <td rowspan="2">Linha 2/3 Coluna 1</td>
+                    <td>Linha 2 Coluna 2</td>
+                    <TD>Linha 2 Coluna 3</TD>
+                </tr>
+                <tr>
+                    
+                    <td>Linha 3 Coluna 2</td>
+                    <TD>Linha 3 Coluna 3</TD>
+                </tr>
+            </table>
+````
+
+## Formulário
+
+````
+      
+            <form>
+                <!--Caixa de texto simples-->
+                <label>Primeiro nome:</label>
+                <br>
+                <input type="text" name="nome">
+                <br>
+                <label>Segundo nome:</label>
+                <br>
+                <input type="text" name="sobrenome">
+                <br>
+                <br>
+                <h4> O que você achou do site?</h4>
+                <!-- Radio button-->
+                <input type="radio" name="opcao" checked> Muito Bom
+                <input type="radio" name="opcao"> Bom
+                <input type="radio" name="opcao"> Regular
+                <input type="radio" name="opcao"> Ruim
+                <input type="radio" name="opcao"> Muito Ruim
+                <!-- mesmo name para ser do mesmo grupo****-->
+                <br>
+                <h4>Como está o clima hoje?</h4>
+                
+                <input type="radio" name="clima" value="sol"> Sol
+                <input type="radio" name="clima" value="chuva" checked> Chuva
+                <input type="radio" name="clima" value="neve"> Neve
+                <input type="radio" name="clima" value="granizo"> Granizo
+                <input type="radio" name="clima" value="nublado"> Nublado
+                <!--select box-->
+                <br>
+                <br>
+                <h4>Qual o status do filme?</h4>
+                <select name="secao">
+                    <option value="" selected></option>
+                    <option value="cartaz">Em cartaz</option>
+                    <option value="em breve">Em Breve</option>
+                    <option value="terminado">Terminado</option>
+                </select>
+                    <label>Outra opção:</label>
+                    <input type="text" name="outra">
+                <br>
+                <br>
+                <!--Texto longo-->
+                <h4>Escreva aqui:</h4>
+                <textarea   
+                            placeholder="Digite aqui"
+                            name="areatexto" 
+                            maxlength="180" 
+                            cols="80" 
+                            rows="10"
+                            style="resize:none"></textarea>
+                <br>
+                <br>
+                <!--Tabela com textos curtos-->
+                <h4>Informações:</h4>
+                <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td><input type="text" name="nome2"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td><input type="text" name="fone"></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <!--checkbox-->
+                <input type="checkbox">Ler e aceitar todos os termos e condições
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="button" name="botao" value="Botão">
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="reset" value="Apagar tudo">
+
+````

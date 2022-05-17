@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulários</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+
+    <body>
+        <H1>Formulários</H1>
+        
+            <form>
+                <!--Caixa de texto simples-->
+                <label>Primeiro nome:</label>
+                <br>
+                <input type="text" name="nome">
+                <br>
+                <label>Segundo nome:</label>
+                <br>
+                <input type="text" name="sobrenome">
+                <br>
+                <br>
+                <h4> O que você achou do site?</h4>
+                <!-- Radio button-->
+                <input type="radio" name="opcao" checked> Muito Bom
+                <input type="radio" name="opcao"> Bom
+                <input type="radio" name="opcao"> Regular
+                <input type="radio" name="opcao"> Ruim
+                <input type="radio" name="opcao"> Muito Ruim
+                <!-- mesmo name para ser do mesmo grupo****-->
+                <br>
+                <h4>Como está o clima hoje?</h4>
+                
+                <input type="radio" name="clima" value="sol"> Sol
+                <input type="radio" name="clima" value="chuva" checked> Chuva
+                <input type="radio" name="clima" value="neve"> Neve
+                <input type="radio" name="clima" value="granizo"> Granizo
+                <input type="radio" name="clima" value="nublado"> Nublado
+                <!--select box-->
+                <br>
+                <br>
+                <h4>Qual o status do filme?</h4>
+                <select name="secao">
+                    <option value="" selected></option>
+                    <option value="cartaz">Em cartaz</option>
+                    <option value="em breve">Em Breve</option>
+                    <option value="terminado">Terminado</option>
+                </select>
+                    <label>Outra opção:</label>
+                    <input type="text" name="outra">
+                <br>
+                <br>
+                <!--Texto longo-->
+                <h4>Escreva aqui:</h4>
+                <textarea   
+                            placeholder="Digite aqui"
+                            name="areatexto" 
+                            maxlength="180" 
+                            cols="80" 
+                            rows="10"
+                            style="resize:none"></textarea>
+                <br>
+                <br>
+                <!--Tabela com textos curtos-->
+                <h4>Informações:</h4>
+                <table>
+                    <tr>
+                        <td>Nome:</td>
+                        <td><input type="text" name="nome2"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefone:</td>
+                        <td><input type="text" name="fone"></td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <!--checkbox-->
+                <input type="checkbox">Ler e aceitar todos os termos e condições
+                <br>
+                <br>
+                <br>
+                <br>
+                <input type="button" name="botao" value="Botão">
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="reset" value="Apagar tudo">
+                
+            
+                
+                
+
+
+
+            </form>
+    
+    </body>
+
+
+</html>
