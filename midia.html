@@ -10,8 +10,12 @@
         }
         body{
             background-color: black;
-            text-align: center;
+            text-align: left;
         }
+        section {
+            text-align:  center;
+        }
+        
         video {
             background-color: black;
         }
@@ -19,8 +23,10 @@
 </head>
 <body>
     <h1>Video bolinha de golf</h1>
-    <video width="320" height="240" controls>
-        <source src="midia/bolinha.mp4" type="video/mp4"> 
-    </video>
+    <section>
+        <video width="320" height="240" controls autoplay muted loop>
+            <source src="midia/bolinha.mp4" type="video/mp4"> 
+        </video>
+    </section>
 </body>
 </html>
