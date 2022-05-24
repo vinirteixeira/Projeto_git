@@ -1,0 +1,14 @@
+nav {
+    background-color: rgb(141, 248, 150);
+    font-size: 20px;
+    border: outset darkblue;
+    border-radius: 5px;
+    width:fit-content;
+    text-align: left;
+            
+}
+nav a {
+    text-decoration: none;
+    color: rgb(69, 37, 212);
+
+}

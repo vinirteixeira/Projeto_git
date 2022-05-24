@@ -39,7 +39,7 @@ Ex:
 
 ````
 1. Selecionar site/ link
-2. [Texto para direcionar para site](site)
+2. https://www.lipsum.com/
 ````
 Ex:
 Documentação do [Markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)

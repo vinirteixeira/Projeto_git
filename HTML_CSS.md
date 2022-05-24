@@ -388,4 +388,16 @@ td {
                 <input type="submit" name="Enviar" value="Enviar">
                 <input type="reset" name="reset" value="Apagar tudo">
 
+            </form>
+
 ````
+
+# Aula 3
+
+## Semânticas
+
+````
+A divisão de espaços em uma página, tag de comando <div>
+
+````
+site para gerar textos [lorem ipsum](https://www.lipsum.com/) 
