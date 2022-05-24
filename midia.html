@@ -19,14 +19,30 @@
         video {
             background-color: black;
         }
+        h1 {
+            text-overflow: ellipsis;
+            font-style: oblique;
+            text-decoration:wavy;
+            font-size: 50px;
+            text-decoration-color: rgb(216, 89, 15);
+            text-shadow: 20px;
+            text-decoration-line:overline underline;
+            text-transform: capitalize;
+            text-align-last: center;
+            color:gold;
+        }
     </style>
 </head>
 <body>
-    <h1>Video bolinha de golf</h1>
+    <h1>Video bolinha de golfe</h1>
     <section>
         <video width="320" height="240" controls autoplay muted loop>
             <source src="midia/bolinha.mp4" type="video/mp4"> 
         </video>
+        <br>
+        <audio controls>
+            <source src="midia/audio.mp3" type="audio/mpeg" autoplay muted loop>
+        </audio>
     </section>
 </body>
 </html>
