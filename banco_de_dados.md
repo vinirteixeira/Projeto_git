@@ -198,3 +198,102 @@ DrawIO
     2º Criar uma nova tabela (Associativa)
     3º Aplicar a 1º Regra
 
+# Aula 4
+
+## SQL
+
+### XAMPP
+
+
+    -Iniciar Apache e Mysql
+    -Abrir host local: (http://localhost/phpmyadmin/)
+
+
+## Comandos mysql
+    
+### SELECT
+
+````
+SELECT campo1, campo2, campo3 ... 
+FROM nome_da_tabela
+WHERE condição_desejada;
+````
+
+````
+    SELECT * // Seleciona todas colunas da tabela
+    FROM aluno; // nome da tabela
+    WHERE 
+    advertencia >= 4 // condição de pesquisa, 4 ou mais advertências
+    nome LIKE "X%" // procurar nome começando com letra X.
+    OR mensalidade <2; // segunda condição, advertência >= 4 OU mensalidade > 2, mostra.
+    AND mensalidade <2; // segunda condição, advertência >= 4 E mensalidade > 2, mostra.
+    ````
+Exemplo:
+
+````
+SELECT * 
+
+FROM aluno
+
+WHERE nome LIKE "B%" 
+
+AND (mensalidade <=3
+
+OR advertencia >2);
+
+````
+procurar pessoas com nome começando com B + (mensalidade <=3 ou advertência > 2)
+````
+````
+SELECT AVG (mensalidade) 
+
+FROM aluno; 
+```` 
+````mostra a média das mensalidades````
+
+### UPDATE
+
+````Atualizar ( incluir informações)````
+
+````
+UPDATE nome_da_tabela
+SET o_que_deseja_altera
+WHERE condição_desejada
+````
+````
+UPDATE aluno
+SET mensalidade = mensalidade + 400
+WHERE mensalidade <5;
+````
+````Aumento de 400 na mensalidade de quem tem mensalidade de menos de 5.````
+
+````
+UPDATE aluno 
+SET mensalidade = mensalidade *1.3
+WHERE mensalidade <400;
+````
+````aumenta em 30% a mensalidade de quem paga menos de 400````
+
+````
+UPDATE aluno 
+SET nome = "Novo_nome"
+WHERE nome = "Velho_nome";
+````
+````altera nome no banco de dados de quem tem o "Velho_Nome"````
+````
+UPDATE aluno
+SET advertencia = 0
+WHERE advertencia > 30;
+````
+
+````Quem tem mais de 30 advertencias, zera````
+
+
+### DELETE
+
+````
+DELETE *
+FROM nome_da_tabela
+WHERE condição_desejada;
+````
+````Apagar ( remover informações)````
