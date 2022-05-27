@@ -297,3 +297,4 @@ FROM nome_da_tabela
 WHERE condição_desejada;
 ````
 ````Apagar ( remover informações)````
+.
