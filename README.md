@@ -23,6 +23,8 @@ git pull origin main # traz do remoto para o local
 
 [Comandos Básicos](comandos_basicos.md)
 
+site para executar [pseudocódigos](https://portugol-webstudio.cubos.io/ide)
+
 # Aulas
 [Banco de dados](banco_de_dados.md)
 
