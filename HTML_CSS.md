@@ -401,3 +401,16 @@ A divisão de espaços em uma página, tag de comando <div>
 
 ````
 site para gerar textos [lorem ipsum](https://www.lipsum.com/) 
+
+# Aula 4
+
+## IFrames
+
+````Para colocar documento de uma outra página na página html atual.````
+
+## Prioridades de chamada:
+
+````InLine > Interno > Externo````
+
+````Style > Id > Class````
+

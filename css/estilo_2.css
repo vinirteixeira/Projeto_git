@@ -1,0 +1,38 @@
+/* * = universal */
+* {
+    margin: 0.2 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p {
+    border: solid darkblue;
+    width: fit-content;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;   
+    }
+
+    body {
+        background-color: powderblue;
+        text-align: center;
+        }
+
+#p4 {
+    background-color: dodgerblue;
+}
+
+#p5 {
+    background-color: lime;
+}
+/* comentário em css */
+.p6 {
+    background-color: rgb(190, 89, 190);
+    width: fit-content;
+    text-align: center;
+    border: solid darkolivegreen;    
+}
+#demo   {
+    color: wheat;
+}
+
+.teste {
+    color: darkgoldenrod;
+}
