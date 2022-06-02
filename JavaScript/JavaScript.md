@@ -20,6 +20,8 @@ site para ver qual versão suporta: [Can I Use](https://caniuse.com/)
 
 ctrl + d seleciona palavras iguais na sequência, atalho pra editar mais de 1 por vez.
 
+ctrl + ; transforma o texto selecionado e, comentário ou remove.
+
 
 ## Variáveis
 
