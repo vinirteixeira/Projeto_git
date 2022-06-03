@@ -297,4 +297,101 @@ FROM nome_da_tabela
 WHERE condição_desejada;
 ````
 ````Apagar ( remover informações)````
-.
+
+# Aula 5
+
+## COMANDOS DO MYSQL
+
+````
+CREATE DATABASE revisando;
+````
+````
+USE revisando;
+````
+
+````
+CREATE TABLE Vendas (
+    ID_Vendas INT,
+    Curso VARCHAR(100),
+    Aluno VARCHAR(100),
+    Estado VARCHAR(100),
+    Valor DECIMAL(10,2)
+    );
+````
+````
+ALTER TABLE Vendas
+ADD PRIMARY KEY(ID_Vendas);
+````
+
+
+````
+INSERT INTO Vendas (ID_Venda, Curso, aluno, Estado, Valor)
+VALUES
+(1, 'PHP Básico', 'Anna' ,'SC', 120),
+(2, 'Confeiteiro', 'Lucca' ,'SC', 250),
+(3, 'Mecânica', 'Martin' ,'SC', 380),
+(4, 'Bons Modos', 'Ruy' ,'RJ', 10),
+(5, 'Gastronomia', 'Liana' ,'SP', 1500),
+(6, 'Técnico TI', 'Amanda' ,'AC', 200);
+````
+
+````
+SELECT* 
+FROM Vendas;
+````
+
+````
+SELECT Aluno, Curso 
+FROM Vendas
+WHERE Estado = 'SC';
+````
+````
+SELECT Aluno, Curso
+FROM Vendas
+WHERE Estado LIKE'S%';
+````
+````
+SELECT Aluno, Curso
+FROM Vendas
+WHERE Estado LIKE'S%'
+ORDER BY Estado;
+
+````
+````
+UPDATE Vendas
+SET Valor = 500
+WHERE Curso = 'Gastronomia';
+````
+````
+UPDATE Vendas
+SET Valor = (Valor -(Valor *0.50))
+WHERE Curso = 'Gastronomia ';
+````
+
+````
+DELETE
+FROM Vendas
+WHERE ID_Vendas = 2;
+````
+
+````
+CREATE TABLE Clientes (
+    idCliente INTAUTO_INCREMENT,
+    nomeEmpresa VARCHAR(255),
+    PRIMARY KEY(idCliente)
+    );
+````
+
+````
+DROP TABLE IF EXISTS Clientes;
+````
+````
+DROP DATABASE 'nome_do_banco';  
+````
+Deleta todo banco de dados
+
+````
+ALTER TABLE Vendas
+ADD email VARCHAR(50) 
+NOT NULL;
+````
