@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste 02</title>
+</head>
+<body onload="paginaCarregada()">
+    <header id="cabecalho"
+            onmouseover="efeito_no_header(this)"
+            onmouseleave="efeito_no_header_normal(this)">
+        <h1 onclick="clickNoCabecalho()">Cabeçalho</h1>
+    </header>
+    <aside>
+        <h2>Corpo</h2>
+        <button type="button" 
+        onclick="trocar_cabecalho()">
+        Trocar cabeçalho
+        </button>
+        <br>
+        <br>
+        <button type="button"
+        onclick="reset()">
+        Reset
+        </button>
+    </aside>
+    <footer>
+        <h1>Rodapé</h1>
+    </footer>
+    
+    <script type="text/javascript">
+        let contador = 0;
+        const trocar_cabecalho = () => {
+            let cabecalho = document.getElementById('cabecalho');
+            //contador++ ou contador = contador + 1;
+            cabecalho.innerHTML = `<h1>Clicou ${++contador} vez(es)!</h1>`;
+        }
+        const reset = () => {
+            let cabecalho = document.getElementById('cabecalho');
+            contador = 0;
+            cabecalho.innerHTML = `<h1>Clicou ${contador} vez(es)!</h1>`;
+        }
+        const paginaCarregada = () => {
+           // alert('A página carregou!')
+        };
+        const clickNoCabecalho = function () {
+            //alert('Você clicou no cabeçalho')
+        } ;
+        const efeito_no_header = (Element) => {
+            //console.log(Element);
+            //Element.style.color = "#01AB67";
+            // Inner Text usado apenas para trocar o texto
+            //Element.innerText = "Mouse in!";            
+        };
+        const efeito_no_header_normal = (Element) => {
+            //Element.style.color = "#000";
+            //Element.innerText = "Mouse out!";
+            //InnerHtml usado para trocar o texto com algum elemento de html
+        
+        };
+
+    </script>
+</body>
+</html>
