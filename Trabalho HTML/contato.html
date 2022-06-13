@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contatos</title>
+</head>
+<body>
+    
+    <h1>Contatos</h1>
+    
+    <p>Para entrar em contato preencha os campos com suas dúvidas</p>
+    <form>
+        <label>Nome completo:</label>
+        <input type="text" name="nome">
+        <h4>Qual a forma preferida para receber a resposta?</h4>
+                <select name="retorno">
+                    <option value="" selected></option>
+                    <option value="email">e-mail</option>
+                    <option value="fone">Telefone</option>
+                </select>                
+        <label>Informe o telefone:</label>
+        <input type="text" name="telefone">
+        <br><br>
+        <label>Informe o e-mail:</label>
+        <input type="text" name="email">
+        <h4> Qual horário você prefere receber o retorno?</h4>
+        
+        <input type="radio" name="opcao" checked> Matutino (8:00 - 12:00)
+        <input type="radio" name="opcao"> Vespertino (13:30 - 18:00)
+        <input type="radio" name="opcao"> Noturno (19:00 - 22:00)
+
+        <h4>Escreva sua dúvida ou sugestão aqui:</h4>
+                <textarea   
+                            placeholder="Digite aqui"
+                            name="areatexto" 
+                            maxlength="180" 
+                            cols="50" 
+                            rows="5"
+                            style="resize:none">
+                </textarea>
+        
+    </form>
+
+    </body>
+</html>
