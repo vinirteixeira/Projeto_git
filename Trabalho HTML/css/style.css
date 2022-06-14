@@ -81,3 +81,8 @@ aside {
     font-style: italic;
     background-color: lightgray;
   }
+
+  body {
+    background-color: rgb(188, 201, 243);
+    
+  }
