@@ -8,10 +8,10 @@ img {vertical-align: middle;
     width: 300px;
 }
 
-/* Slideshow container */
+/* carrossel container */
 .slideshow-container {
-  max-width: 500px;
-  position: relative;
+  max-width: 400px;
+  position: static;
   margin: auto;
 }
 
@@ -50,7 +50,7 @@ img {vertical-align: middle;
   background-color: #717171;
 }
 
-/* Fading animation */
+/* animação de Fading */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -72,6 +72,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   top: 43px;
   bottom: 0;
   height: inherit;
+  
 }
 aside {
     width: 15%;
@@ -83,6 +84,15 @@ aside {
   }
 
   body {
-    background-color: rgb(188, 201, 243);
+    background-color: rgb(170, 174, 187);
     
+  }
+
+  .margem {
+    padding-left: 10px;
+    
+  }
+
+  h4 {
+    padding-right: 75px;
   }
