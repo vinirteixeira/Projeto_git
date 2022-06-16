@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop 2</title>
+<style>
+body{
+background-color: black;
+color:  lightslategray;
+
+}
+ul {
+    margin-bottom:  10px;
+    list-style-type: none;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    max-width: max-content;
+}
+#lista {
+    padding-left: 20px;
+    display: flex;
+    
+}
+.deletar{
+    color: orange;
+    cursor: pointer;
+}
+h2 {
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+    <div id="lista"></div>
+<button type="button" onclick="addItem()">Adicionar Item</button>
+    <script type="text/javascript">
+        const ulLista = document.getElementById('lista');
+        const addItem = () => {
+            let lista ='';
+            const valor = Number(prompt('Informe um Item para a lista'));
+            if(
+                valor != null && valor != undefined && valor > 0
+            ){
+            
+            
+            lista += '<ul>';
+            lista += `<h2>Tabuada do número ${valor} <span class="deletar"
+            onclick="remover(this.parentNode.parentNode)">Deletar</span></h2>`;
+            for(let indice_loop = 0; indice_loop<=10; indice_loop++){
+            //console.log(indice_loop);
+            lista += `<li>${valor} x ${indice_loop}= ${valor*indice_loop}</li>`; // += adiciona algo em vez de substituir
+            }
+            lista += '</ul>';
+            ulLista.innerHTML += lista
+        };
+        }
+        const remover = (elemento) =>{
+            const confirma = confirm(`Tem certeza?`)
+            if (confirma == true){elemento.innerHTML = null;
+            alert("removido com sucesso!");
+        } 
+           
+            
+        };     
+                        
+        
+
+        // LOOPS
+        //for(let indice_loop = 0; indice_loop<10; indice_loop++){
+        //    console.log(indice_loop);
+        //}
+        
+    </script>
+</body>
+</html>

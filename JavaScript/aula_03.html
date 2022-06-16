@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+<style>
+body{
+background-color: black;
+color:  lightslategray;
+}
+
+
+</style>
+</head>
+<body>
+    <ul id="lista"></ul>
+<button type="button" onclick="addItem()">Adicionar Item</button>
+<button type="button" onclick="apagar()">Apagar Tudo</button>
+    <script type="text/javascript">
+        const ulLista = document.getElementById('lista');
+        const addItem = () => {
+            const valor = prompt('Informe um Item para a lista');
+            //Console.log(valor);
+            
+            ulLista.innerHTML += `<h2>Tabuada do número ${valor}</h2>`;
+            for(let indice_loop = 0; indice_loop<=10; indice_loop++){
+            //console.log(indice_loop);
+            ulLista.innerHTML += `<li>${valor} x ${indice_loop}= ${valor*indice_loop}</li>`; // += adiciona algo em vez de substituir
+            };
+            ulLista.innerHTML += '<br>';
+        };
+        const apagar = () => {
+            const confirma = confirm(`Tem certeza?`)
+            console.log (confirma)
+            if (confirma == true){ulLista.innerHTML = null;} 
+                    
+        }
+
+        // LOOPS
+        //for(let indice_loop = 0; indice_loop<10; indice_loop++){
+        //    console.log(indice_loop);
+        //}
+        
+    </script>
+</body>
+</html>
