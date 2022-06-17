@@ -1,4 +1,5 @@
-* {
+
+  * {
     margin:0;
     padding:0;
   }
@@ -91,7 +92,7 @@
     background-color: rgb(4, 112, 9);
     min-width:100px;
   }
-  
+ 
   #container > nav > ul > li > div > ul {
     margin:0px 0 10px 0;
     padding:0;
@@ -117,4 +118,24 @@
   #container > nav > ul > li > div > ul > li > a {
     padding : 5px;
       color:black;
+  }
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+   width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
   }
