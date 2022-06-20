@@ -1,4 +1,4 @@
-
+/* slide slideshow-container */
 * {box-sizing: border-box;}
 body {font-family: 'Times New Roman', Times, serif}
 .mySlides {display: none;}
@@ -20,19 +20,12 @@ img {vertical-align: middle;
   color: black ;
   font-size: 15px;
   padding: 8px 12px;
-  position: absolute;
+  position: relative;
+  text-align: center;
   width: 100%;
-  text-align: right;
+  
 }
 
-/* Number text (1/4 etc) */
-.numbertext {
-  color: black;
-  font-size: 12px;
-  font-style: normal;
-  padding: 8px 12px;
-            
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -74,12 +67,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   height: inherit;
  
 }
+/* Página + header/nav */
   * {
     margin:0;
     padding:0;
   }
   body {
-    background-color: rgb(50, 211, 50);
+    background-color: rgb(5, 41, 5);
     font-family: 'Raleway', sans-serif;
   }
   #ribbon {
@@ -173,24 +167,41 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     padding:0;
     list-style:none;
   }
-  #u_a_c {
-    position:relative;
-    width:100%;
-  /*   background-color:red; */
+  /*galeria de imagens dos produtos */
+  
+  div.gallery {
+    
+    margin: 5px;
+    border: 1px solid rgb(5, 61, 7);
+    float: left;
+   width: 180px;
+   text-align: center;
   }
-  #up_arrow {
-    position:relative;
-    width:20px;
-    height:20px;
-    left:42%;
-    top:-10px;
-    background-color:yellow;
-    transform:rotate(45deg);
+  
+  div.gallery:hover {
+    border: 1px solid #777;
   }
-  #container > nav > ul > li> div > ul > li:hover {
-    background-color:rgba(0,0,0,0.2);
+  
+  div.gallery img {
+    width: 180px;
+    height: 180px;
   }
-  #container > nav > ul > li > div > ul > li > a {
-    padding : 5px;
-      color:black;
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
   }
+
+
+  /* padrão do texto central*/
+article {
+  background-color: rgb(2, 44, 11);
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  padding-left: 33%;
+  padding-right: 33%;
+  font-size: 20px;
+  
+
+}
