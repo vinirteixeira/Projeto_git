@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: antiquewhite;
+        }
+
+        form {
+            margin-left: 15%;
+
+        }
+
+        .input-form {
+            padding: 0.5%;
+        }
+
+        #confirm {
+            text-align: right;
+            color: green;
+        }
+
+        #failed {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="confirm"></div>
+
+
+
+    <form name="form_login">
+        <div class="input-form">
+            <label>Login: </label>
+            <input id="login" type="text">
+        </div>
+        <div class="input-form">
+            <label>Senha:</label>
+            <input id="senha" type="password">
+        </div>
+        <div class="input-form">
+            <button type="button" onclick="realizarLogin()">Entrar</button>
+        </div>
+        <div id="failed"></div>
+    </form>
+
+    <script type="text/javascript">
+
+        const testeVerificarLogin = (login, senha) => {
+            const divConfirm = document.getElementById('confirm');
+            const divFailed = document.getElementById('failed');
+            if (login == 'maria@asdrubal.corp' && senha == 'asd@159rt') {
+                //alert('Bem vinda Maria, Você está logado!'.toLocaleLowerCase());
+                divConfirm.innerHTML = `<h4>Bem vinda Maria, Você está logado!</h4>`;
+                divFailed.innerHTML = null;
+
+            }
+
+            // criar uma div e mostrar mensagem no canto superior direito.
+            else {
+                //alert('Credenciais inválidas!'.toUpperCase());
+                divFailed.innerHTML = `<h4>Credenciais inválidas!</h4>`;
+                divConfirm.innerHTML = null;
+                
+            }
+            // aparecer mensagem abaixo do botão de login
+
+
+        };
+        const validarInputs = (login, senha, inputLogin, inputSenha) => {
+            if (!login.includes('@') || !login.includes('.')) {
+                //alert('Login inválido');
+                inputLogin.style.borderColor = "red";
+                inputLogin.style.color = "red";
+
+                //inputLogin('login').value = "";
+                //inputSenha('senha').value = "";
+
+                if (senha == undefined || senha == "") {
+                    inputSenha.style.borderColor = "red";
+                    inputSenha.style.color = "red";
+                }
+
+            }
+
+        }
+        const realizarLogin = () => {
+
+            const inputLogin = document.getElementById("login");
+            const inputSenha = document.getElementById("senha");
+            const senha = inputSenha.value;
+            const login = inputLogin.value;
+
+
+            console.log(login, senha);
+
+            validarInputs(login, senha, inputLogin, inputSenha);
+            testeVerificarLogin(login, senha);
+
+            // Opção 1
+            // if(login.includes('@') && login.includes('.')){
+            //   alert('Login válido');
+            // }
+            // else {
+            //     alert("Login inválido!");
+            // }
+
+            // Opção 2
+            //console.log("Existe o termo @ na string?", login.includes('@'));
+            //console.log("Existe o termo @ na string?", login.includes('.'));
+        };
+
+
+
+
+    </script>
+</body>
+
+</html>
